@@ -7,6 +7,31 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    
  <style>
+	 .error {
+  			border: 1px #f00;
+  			background-color: #fdd;
+
+ 			 &--serious {
+    			@extend .error;
+    			border-width: 3px;
+  			}
+		}
+		
+		.error:hover {
+  			background-color: #fee;
+			}
+
+			.error--serious {
+  			@extend .error;
+  			border-width: 3px;
+			}
+		.alert:hover, %strong-alert {
+  font-weight: bold;
+}
+
+%strong-alert:hover {
+  color: red;
+}
 	  .banner {
   	width: 100%;
  	height: auto;
@@ -100,6 +125,9 @@
 	.btn: hover {
   			background-color: #448CDD;
 			}
+		
+		
+		
 	 
       .imput [type=text]{
             background-color: red
