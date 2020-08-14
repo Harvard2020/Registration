@@ -2,89 +2,103 @@
 <html lang="en">
     <head>
         <title>Google Search</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 
     <style>
+	    h1{
+		    color: blue;
+		    font-weight: bold;
+		    text-align: center;
+	    }	    
         .container {
 				position: fixed;
 					height: auto;
 						display: inline-table;
 							border-radius: 25px;
 								Padding-top: 10px;
-								width: 100%;
-									margin-top: 200px;
+									width: 100%;
+											margin-top: 200px;
 										Margin-left: 10px;
 									color: white;
+								background-color: #448CDD;
 							float: right;
+				ordering: false;
 		}
-			.btn {
-					display: inline-table;
+	.btn {
+				display: inline-table;
 							text-align: center;
 									font-weight: bold;
-				border-radius: 25px;
-								Padding-top: 25px;
-											grid-raw-gap: 10px;
-										background-color: #448CDD;
-  									color: white;
-  								font-size: 25px;
-  							padding: 5px;
-  						cursor: pointer;
-								Margin-left: 10px;
-										margin-right: 10px 
-										Margin-top: 200px;
+											border-radius: 25px;
+												Padding-top: 25px;
+													grid-raw-gap: 10px;
+												background-color: #448CDD;
+  											color: white;
+  										font-size: 25px;
+  									padding: 5px;
+  								cursor: pointer;
+							Margin-left: 10px;
+						margin-right: 10px 
+					Margin-top: 200px;
 				float: right;
+		ordering: false;
 		}
 				.container .btn {
 						display: inline-table;
 								text-align: center;
-					border-radius: 25px;
-								Padding-top: 25px;
-										font-weight: bold;
-												grid-raw-gap: 10px;
-										background-color: #448CDD;
-  										color: white;
-  									font-size: 25px;
-  								padding: 10px;
-  						cursor: pointer;
-								Margin-left: 10px;
-										margin-right: 10px 
-  												
-										Margin-top: 100px;
-					float: right;
+									border-radius: 25px;
+											Padding-top: 25px;
+												font-weight: bold;
+													grid-raw-gap: 10px;
+														color: #448CDD;
+  													font-size: 25px;
+  												padding: 10px;
+  											cursor: pointer;
+										Margin-left: 10px;
+									margin-right: 10px 		
+								Margin-top: 100px;
+							float: right;
+					"ordering": false;
+				background-color: #448CDD;
 		}
 				.container .btn a {
 						display: inline-table;
-								text-align: center;
+								text-align: center;  
 											border-radius: 25px;
-								Padding-top: 25px;
-										font-weight: bold;
-												font-size: 25px;
-											color: white;
-										grid-column-gap: 10px;
-            								grid-row-gap: 10px;
-  								padding: 10px;
-  							cursor: pointer;	
-										Margin-top: 100px;
-												Margin-left: 10px;
-					float: right;
+													Padding-top: 25px;
+														font-weight: bold;
+															font-size: 25px;
+														color: white;
+													grid-column-gap: 10px;
+            											grid-row-gap: 10px;
+  											padding: 10px;
+  										cursor: pointer;	
+									Margin-top: 100px;
+								Margin-left: 10px;
+							float: right;
+					"ordering": false;
+				background-color: #448CDD;
 		}
 			.container: hover {
-  					background-color: #448CDD;
+  					background: #448CDD;
 				color: blue;
 		}
 			.btn: hover {
   					background-color: #448CDD;
-				colore:blue;
+				color:blue;
 		}
-	       #search {
+	    #search {
   			width: 50%;
-  				margin: auto;
-  						text-align: center;
-  							flex-direction: column;
+  				 		
+  					justify-content: center;
+  							align-items: center;
+		    							height: 40px;
+		   								
+  						
+  											flex-direction: column;
 									border-radius: 25px;
 		    						padding:15px;
 		    					font-size:25px;
-						align: vertical;
+						
   					display: flex;
 		    		position: fixed;
 		    margin-top: 70px;
@@ -98,7 +112,12 @@
 				}
 	.searchTerm {
   			width: 40%;
-  				border: 3px solid blue;		
+  				 display:flex;		
+  			justify-content: center;
+  					align-items: center;
+		    					height: 40px;
+		   						
+		border: 3px solid blue;		
   							padding: 10px;
   								height: 40px;
 									background: white;
@@ -107,10 +126,9 @@
   									color: blue;
 		    						position: fixed;
 	  						border-radius: 25px;
-						margin-top: 75px;
+						margin-top: 100px;
 					font-size:25px;
-				margin-left: 100px, auto;
-			margin-right: 100px, auto;
+				
 		font-weight: bold;
 	    }
 	    .searchTerm: hover{
@@ -119,18 +137,21 @@
 	    }
 	    .searchButton {
  				width: 40%;
-  						height: 40px;
-  								border: 3px solid red;
-  											background: white;
+  						
+		     			display:flex;		
+  						justify-content: center;
+  								align-items: center;
+		    								height: 40px;
+  											border: 3px solid red;
+  														background: white;
   													text-align: center;
-  											color: blue;	
+  												color: blue;	
  						 				cursor: pointer;
   									font-size: 25px;
-	 							position: fixed;
+	 							position: relative;
 	  						border-radius: 25px;
-		    				margin-top: 150px;
-		    			margin-left: 100px, auto;
-		    		margin-right: 100px, auto;
+		    				margin-top: 350px;
+		    			
 		    font-weight: bold;
 }
 	      .searchbutton: hover{
@@ -138,19 +159,28 @@
 						color:green;
 	    }
 	    form{
-		    		border-radius: 25px; 
-		    	margin-top: 100px;
-		text-align: center;
-	width: 100%;
-	margin-left: 200px;
-			font-weight: bold;
-					font-size: 15px;
-		    padding: 10px;
-		    vertical-align: center;
+		      display:flex;		
+  			justify-content: center;
+  					align-items: center;
+		    					height: 40px;
+		   						margin: auto;
+		    							border-radius: 25px; 
+		    									margin-top: 100px;
+										width: 100%;	
+									font-weight: bold;
+								font-size: 25px;
+		    					position:relative;
+		    			flex-direction: column;
+		    		
 	    }
-        </style>
+          form: hover{
+		    background-color: white;
+						color:green;
+	    }
+	    </style>
     </head>
     <body>
+	    
 	    <div class "container">
         		<div class="btn">
 				<a href="https://harvard2020.github.io/LoginGoogleSearch/"  <button class="btn">Back to Google Search</button></a></div>
@@ -159,14 +189,15 @@
 				<a href=" https://harvard2020.github.io/TableGoogleAdvance/"  <button class="btn">Advances search</a></div>	
 			
 		</div>
-          <li id="search">
+ 
+<div class "search">
         <form action="https://www.google.com/imghp?hl=en">	
-            <input type="text"  class="searchTerm" name="What are you looking for?">
-		
-			<input type="submit"  class="searchButton" value="Google Search"> 	       
-        </form>
-</li> 
-
-
+            	<input type="text"  class="searchTerm" name="q">
+		<input type="submit"  class="searchButton" value="Google Search">
+	</form>
+</div>
+	   
     </body>
 </html>
+    
+
